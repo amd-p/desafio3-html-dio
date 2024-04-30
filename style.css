@@ -1,0 +1,217 @@
+
+body, html {margin: 0;  padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+ul {  list-style: none; padding-left: 5px; }
+
+a { color:rgb(74, 74, 148); text-decoration: none;}
+
+.table-title {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.table_content{
+  background-color: lightgrey;
+}
+figure {
+  text-align: center;
+}
+
+
+/*MAIN*/
+.main{
+  text-align: justify;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+}
+.main h2{
+  margin-top: 50px;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/*ANCHORS*/
+.container{
+  background-color: #E8F1F2;
+  width: 100%;
+  height: 100px;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: left;
+  align-items: center;
+  justify-content:space-between;
+}
+.container ul{
+  display: flex; flex-direction: row;
+}
+#anchors {
+  border-left: solid 1px #E8F1F2;
+  margin: 0px 2px 2px 0px;
+  padding-left: 300px;
+  
+}
+#anchors a {
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 2px;
+  
+}
+
+
+/*FOOTER*/
+.footer {
+    height: 100px;
+    background-color: #2a4863;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    gap: 2rem;
+}
+#footer_content{
+  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 70%;
+  height: 3px;
+  gap: 2rem;
+}
+#footer_subscribe{
+  align-items: center;
+  gap: 1.7rem;
+  font-size: 12px;
+  }
+#footer_subscribe p{
+  color: #ffffff;
+  align-items: center;
+}
+#input_group{
+  align-items: center;
+  background-color: #E8F1F2;
+  border-radius: 0.7rem;
+}
+#input_group input{
+  display: inline-block;
+  all: unset;
+  padding: 0.5rem;
+  width: 80px;
+}
+#input_group button{
+  background-color: #13293D;
+  color: #E8F1F2;
+  padding: 0px 5rem;
+  font-size: 1.125rem;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: inline-block;
+}
+
+#email{position: relative;}
+.footer a {
+  font-size: 12px;
+  color: #ffffff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.4s;
+  border-radius: 15px;
+}
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #28363d;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-weight: 100;
+}
+.fa_custom {color: #3f5efb}
+
+
+/*SIDEBAR*/
+.sidebar {
+  color: #fff;
+  width: 100%;
+  padding-left: 20px;
+  height: 100vh;
+  background-image: linear-gradient(30deg , #006494, #13293D);
+  border-top-right-radius: 8px; 
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1;
+}
+.sidebar a {
+  margin: 0;
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+}
+a:hover {
+    color: #3f5efb;
+    background: #fff;
+    outline: none;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .sidebar a i {
+    margin-right: 5px;
+  }
+  
+  .sidebar a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #fff;
+  }
+  
+  .sidebar a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #fff;
+  }
+  
+  .sidebar p {
+    margin: 0;
+    padding: 40px 0;
+  }
+ 
